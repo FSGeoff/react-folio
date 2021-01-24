@@ -4,11 +4,13 @@ import Bio from "./containers/Bio/Bio";
 import Education from "./containers/Education/Education";
 import Projects from "./containers/Projects/Projects";
 import WorkHistory from "./containers/WorkHistory/WorkHistory";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
+        <Navbar/>
 				<Switch>
 					<Route path="/workhistory" component={WorkHistory} />
 					<Route path="/bio" component={Bio} />
